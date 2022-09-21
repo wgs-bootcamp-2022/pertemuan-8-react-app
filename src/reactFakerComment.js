@@ -6,43 +6,36 @@ const element = document.getElementById("root")
 
 const root = ReactDom.createRoot(element)
 
-const User = ({name, comment})=>{
-  return (
-      <div>
-          {name}    
-          {comment}    
-      </div>
-  )
-}
-
-const App = () => {
+const App = (props) => {
     return(
         <div className="ui container comments">
             <div className="comment">
                 <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.avatar()} />
+                    <img alt="avatar" src={props.avatar} />
                 </a>
                 <div className="content">
-                  <a href="/" className="author">
-                  <User name={faker.name.firstName()}/>
+                  <a href="/" className="author" >
+                  {props.name}
                   </a>
                   <div className="metadata">
-                      <span className="date"> Today at {new Date().toLocaleTimeString()} </span>
+                      <span className="date"> Today at {props.date} </span>
                   </div>
-                  <div className="text"> <User comment={faker.lorem.lines()}/></div>
+                  <div className="text"> {props.comment}</div>
                 </div>
             </div>
         </div>
     )
 }
 
-const Func = () =>{
-  return (
-    <div>
-      <App />
-      <App />
-      <App />
-    </div>
-  )
+const Comment = () => {
+  const comment = {
+    avatar : faker.image.avatar(),
+    name : faker.name.firstName(),
+    date : new Date().toLocaleTimeString(),
+    comment : faker.lorem.lines()
+  }
+    return (
+        <App avatar = {comment.avatar} name = {comment.name} date = {comment.date} comment = {comment.comment} />
+    )
 }
-root.render(<Func />)
+root.render(<Comment />)
