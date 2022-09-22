@@ -34,8 +34,10 @@ const Comment = () => {
     date : new Date().toLocaleTimeString(),
     comment : faker.lorem.lines()
   }
-    return (
-        <App avatar = {comment.avatar} name = {comment.name} date = {comment.date} comment = {comment.comment} />
-    )
+  return (
+    <App avatar = {comment.avatar} name = {comment.name} date = {comment.date} comment = {comment.comment} />
+  )
 }
 root.render(<Comment />)
+
+
