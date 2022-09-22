@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from "react-dom/client"
-import { faker } from '@faker-js/faker';
+import data from "./data/commentData";
 
 const element = document.getElementById("root")
 
@@ -28,27 +28,6 @@ class App extends React.Component {
         )
     }
 }
-
-const data = [
-  {
-    avatar : faker.image.avatar(),
-    name : faker.name.firstName(),
-    date : new Date().toLocaleTimeString(),
-    comment : faker.lorem.lines()
-  },
-  {
-    avatar : faker.image.avatar(),
-    name : faker.name.firstName(),
-    date : new Date().toLocaleTimeString(),
-    comment : faker.lorem.lines()
-  },
-  {
-    avatar : faker.image.avatar(),
-    name : faker.name.firstName(),
-    date : new Date().toLocaleTimeString(),
-    comment : faker.lorem.lines()
-  }
-]
 
 class Comment extends React.Component  {
     render(){
