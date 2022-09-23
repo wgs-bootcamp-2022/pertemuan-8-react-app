@@ -32,10 +32,8 @@ class App extends React.Component {
               {this.props.name}
               </a>
               <div className="metadata">
-                  <span className="date"> Today at {this.props.date} </span>
-              </div>
-              <div className="metadata">
-                  <span className="like">| Liked: {this.state.count} </span>
+                <span className="date"> Today at {this.props.date} </span>
+                <span className="content" style={{color:"black"}}>| Liked: {this.state.count} </span>
               </div>
               <div className="text"> {this.props.comment}</div>
               <button className="increment"  onClick={(e)=>this.increment(e)}>Click Me</button>
@@ -45,7 +43,6 @@ class App extends React.Component {
     )
   }
 }
-
 
 class Comment extends React.Component  {
   render(){
