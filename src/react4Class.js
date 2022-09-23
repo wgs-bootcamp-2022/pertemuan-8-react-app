@@ -30,13 +30,13 @@ class App extends React.Component {
 }
 
 class Comment extends React.Component  {
-    render(){
-      return this.props.data.map((com, index) => (
-        <div className='comment' key={index}>
-          <App avatar={com.avatar} name={com.name} date={com.date} comment={com.comment}/>
-        </div>
-      ))
-    }
+  render(){
+    return this.props.data.map((com, index) => (
+      <div className='comment' key={index}>
+        <App avatar={com.avatar} name={com.name} date={com.date} comment={com.comment}/>
+      </div>
+    ))
+  }
 }
 
 const RunApp = () => {
