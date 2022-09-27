@@ -39,7 +39,7 @@ class Form extends React.Component {
                     <input
                         type="text"
                         name="lastName"
-                        value2={this.state.lastName}
+                        value={this.state.lastName}
                         onChange={this.handleChange}
                     />
                 </label><br />
