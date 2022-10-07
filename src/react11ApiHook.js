@@ -10,7 +10,6 @@ const SearchBar = ({ onFormSubmit }) => {
 
 	const onSubmit = event => {
 		event.preventDefault();
-
 		onFormSubmit(term);
 	};
 
@@ -104,7 +103,7 @@ const useVideos = (defaultSearchTerm) => {
 
 const App = () => {	
 	const [selectedVideo, setSelectedVideo] = useState(null);
-	const [videos, search] = useVideos('react js custom hooks');
+	// const [videos, search] = useVideos('lagu indonesia');
 
 	useEffect(() => {
 		setSelectedVideo(videos[0]);
@@ -112,22 +111,22 @@ const App = () => {
 
 	return (
     <div className='ui container' style={{marginTop: '1em'}}>
-			<SearchBar onFormSubmit={search} />
-			<div className='ui grid'>
-				<div className='ui row'>
-          <div className="eleven wide column">
-					  <VideoDetail video={selectedVideo} />
-          </div>
-          <div className='five wide column'>
-					<VideoList
-						onVideoSelect={setSelectedVideo}
-						videos={videos}
-					/>
-				</div>
-				</div>
+        <SearchBar onFormSubmit={search} />
+        <div className='ui grid'>
+            <div className='ui row'>
+        <div className="eleven wide column">
+            <VideoDetail video={selectedVideo} />
+        </div>
+        <div className='five wide column'>
+                <VideoList
+                    onVideoSelect={setSelectedVideo}
+                    videos={videos}
+                />
+            </div>
+        </div>
 
-			</div>
-		</div>
+        </div>
+	</div>
 	);
 };
 

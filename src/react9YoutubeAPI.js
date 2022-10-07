@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDom from "react-dom/client"
 import unsplash from "./data/youtubeApi";
 
-
 const element = document.getElementById("root")
-
 const root = ReactDom.createRoot(element)
 
 class Searchbar extends React.Component {
