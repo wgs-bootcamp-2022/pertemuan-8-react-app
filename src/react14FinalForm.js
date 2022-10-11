@@ -51,7 +51,7 @@ const MyForm = () => (
             <div>
               <label>
                 <Field
-                  name="html"
+                  name="expertise"
                   component="input"
                   type="checkbox"
                   value="html"
@@ -60,7 +60,7 @@ const MyForm = () => (
               </label>
               <label>
                 <Field
-                  name="css"
+                  name="expertise"
                   component="input"
                   type="checkbox"
                   value="css"
@@ -69,7 +69,7 @@ const MyForm = () => (
               </label>
               <label>
                 <Field
-                  name="javascript"
+                  name="expertise"
                   component="input"
                   type="checkbox"
                   value="javascript"
@@ -78,7 +78,7 @@ const MyForm = () => (
               </label>
               <label>
                 <Field
-                  name="nodejs"
+                  name="expertise"
                   component="input"
                   type="checkbox"
                   value="nodejs"
@@ -87,7 +87,7 @@ const MyForm = () => (
               </label>
               <label>
                 <Field
-                  name="reactjs"
+                  name="expertise"
                   component="input"
                   type="checkbox"
                   value="reactjs"
@@ -101,28 +101,28 @@ const MyForm = () => (
             <div>
               <label>
                 <Field
-                  name="stooge"
+                  name="technology"
                   component="input"
                   type="radio"
-                  value="fe"
+                  value="frontEnd"
                 />{" "}
                 Front End
               </label>
               <label>
                 <Field
-                  name="stooge"
+                  name="technology"
                   component="input"
                   type="radio"
-                  value="be"
+                  value="backEnd"
                 />{" "}
                 Back End
               </label>
               <label>
                 <Field
-                  name="stooge"
+                  name="technology"
                   component="input"
                   type="radio"
-                  value="fs"
+                  value="fullStack"
                 />{" "}
                 Full Stack
               </label>
