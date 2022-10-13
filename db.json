@@ -1,0 +1,108 @@
+{
+  "post": [
+    {
+      "firstName": "Yahya",
+      "lastName": "zakaria",
+      "id": 1
+    },
+    {
+      "firstName": "yahya",
+      "lastName": "zakaria",
+      "expertise": [
+        "html",
+        "javascript",
+        "css",
+        "nodejs",
+        "reactjs"
+      ],
+      "education": "High School",
+      "technology": "fullStack",
+      "notes": "aasd",
+      "id": 2
+    },
+    {
+      "firstName": "Yahya",
+      "id": 3
+    },
+    {
+      "firstName": "Yahya",
+      "technology": "frontEnd",
+      "id": 4
+    },
+    {
+      "firstName": "Yahya",
+      "technology": "frontEnd",
+      "lastName": "zakaria",
+      "id": 5
+    },
+    {
+      "firstName": "Yahya",
+      "lastName": "zakariya",
+      "expertise": [
+        "html",
+        "css"
+      ],
+      "id": 6
+    },
+    {
+      "firstName": "Yahya",
+      "id": 7
+    },
+    {
+      "firstName": "Yahya",
+      "id": 8
+    },
+    {
+      "firstName": "Yahya",
+      "technology": "fullStack",
+      "expertise": [
+        "reactjs",
+        "css",
+        "javascript",
+        "nodejs",
+        "html"
+      ],
+      "lastName": "sddsdsa",
+      "education": "Post Graduate",
+      "notes": "sasasasdas",
+      "id": 9
+    },
+    {
+      "firstName": "Yahya",
+      "lastName": "zakaria",
+      "id": 10
+    },
+    {
+      "firstName": "Yahyaassasd",
+      "lastName": "zakaria",
+      "id": 11
+    },
+    {
+      "firstName": "Yahya",
+      "lastName": "zakaria",
+      "education": "High School",
+      "expertise": [
+        "html",
+        "css",
+        "nodejs",
+        "javascript",
+        "reactjs"
+      ],
+      "technology": "backEnd",
+      "id": 12
+    },
+    {
+      "firstName": "yahya",
+      "lastName": "zakaria",
+      "employed": true,
+      "education": "High School",
+      "expertise": [
+        "html",
+        "css",
+        "javascript",
+        "nodejs"
+      ],
+      "id": 13
+    }
+  ]
+}
