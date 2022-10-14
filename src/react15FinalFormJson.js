@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 
 import { createStore } from "redux";
 import reducers from "./assignmentReduxJson/reducers/formReducer";
-import MyForm from "./assignmentReduxJson/components/myForm";
+import MyForm from "./assignmentReduxJson/components/AddUser";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 const element = document.getElementById("root");

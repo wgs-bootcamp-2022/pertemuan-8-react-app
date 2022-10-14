@@ -9,20 +9,24 @@ import { myForm } from "../actions/myForm.js";
 
 import { useDispatch } from "react-redux";
 import { API } from "../config/api";
+import { redirect } from "react-router-dom";
 
+import { browserHistory } from 'react-router';
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const MyForm = () => {
   // menggunakan hook use dispatch
   const dispatch = useDispatch();
 
+
   const onSubmit = async (values) => {
     await sleep(300);
     //response dari db dengan endpoint post
     const response = await API.post("/post", values);
-    window.alert(JSON.stringify(values, 0, 2));
+    // window.alert(JSON.stringify(values, 0, 2));
     dispatch(myForm(values));
     console.log(response);
+    this.context.router.push("/all")
   };
 
   return (
@@ -159,7 +163,7 @@ const MyForm = () => {
                 Reset
               </button>
             </div>
-            <pre>{JSON.stringify(values, 0, 2)}</pre>
+            {/* <pre>{JSON.stringify(values, 0, 2)}</pre> */}
           </form>
         )}
       />
@@ -168,10 +172,3 @@ const MyForm = () => {
 };
 
 export default MyForm;
-// root.render(
-//   <React.StrictMode>
-//     <Provider store={store}>
-//       <MyForm />
-//     </Provider>
-//   </React.StrictMode>
-// );
