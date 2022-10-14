@@ -11,6 +11,7 @@ const App =()=> {
       <Navbar />
     </div>
     <div className="container mt-3">
+      {/* add route add and get user */}
       <Routes>
         <Route path="/all" element={<AllUsers />} />
         <Route path="/add" element={<AddUser />} />

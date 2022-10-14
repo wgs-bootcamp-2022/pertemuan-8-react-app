@@ -14,9 +14,8 @@ import {
 } from "@material-ui/core";
 
 function AllUsers() {
-
   const [users, fetchUsers] = useState([]);
-
+  // get data from endpoint post
   useEffect(() => {
     fetch("http://localhost:3001/post")
       .then((res) => res.json())
@@ -28,25 +27,28 @@ function AllUsers() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container> <br />
+      <Container>
+        {" "}
+        <br />
         <TableContainer component={Paper}>
           <Table aria-label="simple table">
             <TableHead>
               <TableRow>
                 <TableCell align="right">First Name</TableCell>
                 <TableCell align="right">Last Name</TableCell>
-                {/* <TableCell align="right">Expertise</TableCell> */}
+                <TableCell align="right">Expertise</TableCell>
                 <TableCell align="right">Education</TableCell>
                 <TableCell align="right">Technologi</TableCell>
                 <TableCell align="right">Note</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
+              {/* display data from database */}
               {users.map((row) => (
                 <TableRow key={row.id}>
                   <TableCell align="right">{row.firstName}</TableCell>
                   <TableCell align="right">{row.lastName}</TableCell>
-                  {/* <TableCell align="right">{row.expertise}</TableCell> */}
+                  <TableCell align="right">{row.expertise}</TableCell>
                   <TableCell align="right">{row.education}</TableCell>
                   <TableCell align="right">{row.technology}</TableCell>
                   <TableCell align="right">{row.notes}</TableCell>
